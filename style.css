@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+:root {
+  --oxfordBlue: #101935;
+  --tiffanyBlue: #9AD4D6;
+  --azure: #F2FDFF;
+  --thistle: #DBCBD8;
+  --ultraVoilet: #564787;
+}
+
+/* NavBar Style */
+
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar {
+  height: 75px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: var(--ultraVoilet);
+  border-bottom: 2px dashed var(--ultraVoilet);
+}
+
+.navbar-nav {
+  background-color: var(--ultraVoilet);
+}
+
+.nav-item .nav-link {
+  color: #F2FDFF !important;
+  font-weight: 600;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Carouser Start */
+.service-box {
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.text-brown {
+  color: #3b1d1a;
+}
+
+.btn-dark {
+  background-color: #3b1d1a;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #2c1512;
+}
+
+.btn-light {
+  color: #3b1d1a;
+  border-color: #3b1d1a;
+}
+
+.btn-light:hover {
+  background-color: #eee;
+}
+
+/* card Section Start */
+
+.cardSection {
+  border: none;
+  font-size: 19px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.cardSection img {
+  margin-top: 20px;
+}
+
+.text-muted {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.myCard:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.trasform {
+  transform: translateY(-150px);
+}
+
+/* Hone section */
+.text-justify {
+  text-align: justify;
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  height: 70%;
+  width: 4px;
+  background: #4b32c3;
+  border-radius: 2px;
+}
+
+.about-btn {
+  border: 2px solid #4b32c3;
+  color: #4b32c3;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  background-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.about-btn:hover {
+  background-color: #4b32c3;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(75, 50, 195, 0.2);
+}
+
+/* WordPress Development Start */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.typing-text {
+  height: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+.input-box {
+  margin-top: 30px;
+  max-width: 500px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  width: 70%;
+  border-radius: 6px 0 0 6px;
+}
+
+.input-box button {
+  width: 280px;
+}
+
+
+.custom-btn {
+  color: #2f2f80;
+  border: 2px solid #2f2f80;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+}
+
+.custom-btn:hover {
+  background-color: #2f2f80;
+  color: #fff;
+}
+
+.join-us-btn {
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.join-us-btn:hover {
+  color: #000 !important;
+  opacity: 0.85;
+}
+
+/* ContactUs Style */
+.highlight {
+  color: #00d8ff;
+  font-weight: 800;
+}
+
+.form-container {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: #00d8ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btn-custom:hover {
+  background-color: #00a2c6;
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+/* AboutUs Start */
+.about {
+  height: 500px;
+  background-image: url('https://i.ibb.co/x8PCGDr7/about-us-img.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutText {
+  height: inherit;
+  background-color: #dedcdc4a;
+  text-align: center;
+  padding-top: 200px;
+  color: #fff;
+}
+
+.section {
+  padding-bottom: 60px;
+  text-align: justify;
+}
+
+.highlight-btn,
+.btn-discover,
+.input-box button,
+.join-us-btn {
+  text-decoration: none;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.highlight-btn:hover {
+  opacity: 0.9;
+}
+
+.ring-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.ring-img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.ring-img img {
+  height: 100%;
+}
+
+.ring-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.blue {
+  color: #6648ff;
+}
+
+.orange {
+  color: #f39019;
+}
+
+.green {
+  color: #25b46b;
+}
+
+.ring-text h5 {
+  font-weight: 600;
+}
+
+.icon-check {
+  width: 28px;
+  height: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.icon-blue {
+  background-color: #6648ff;
+}
+
+.icon-orange {
+  background-color: #f39019;
+}
+
+.icon-green {
+  background-color: #25b46b;
+}
+
+.btn-discover:hover {
+  background-color: #4b32d4;
+  color: #fff;
+}
+
+
+
+/* Footer Style */
+footer {
+  font-size: 19px;
+  color: var(--azure);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top: 2px dashed var(--azure);
+  background-color: var(--ultraVoilet);
+}
+
+.footerHeader {
+  height: 70px;
+  margin-bottom: 20px;
+  color: var(--azure);
+}
+
+.footer-sec a {
+  color: var(--azure);
+  text-decoration: none;
+  display: block;
+  line-height: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .service-card {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+      box-shadow: 1rem 1rem 2rem 3px rgba(0, 0, 0, .075) !important;
+      transform: translateY(-6px);
+    }
+
+    .object-fit-cover {
+      object-fit: cover;
+    }
+
+    .custom-img-container {
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    .about-btn {
+      border: 2px solid #4b32c3;
+      color: #4b32c3;
+      transition: all 0.3s ease-in-out;
+      background-color: transparent;
+    }
+
+    .about-btn:hover {
+      background-color: #4b32c3;
+      color: white;
+    }
+
+    .why-choose-us {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #443961;
+    }
+
+    .section-title h3 {
+      font-size: 1.8rem;
+      color: #443961;
+      margin-bottom: 20px;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .feature-list {
+      margin-bottom: 40px;
+    }
+
+    .feature-list li {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .custom-btn {
+      border: 2px solid #443961;
+      color: #443961;
+      font-weight: 600;
+      padding: 10px 25px;
+      transition: all 0.3s ease;
+      background-color: transparent;
+    }
+
+    .custom-btn:hover {
+      background-color: #443961;
+      color: #fff;
+    }
+
+    /* Cards */
+    .feature-card {
+      border-radius: 20px 0 20px 0;
+      overflow: hidden;
+      border: 1px solid #eee;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .feature-card:hover {
+      border-radius: 0 20px 0 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .feature-card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: contain;
+      padding: 10px;
+      display: block;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+
+    .feature-card-body {
+      padding: 20px;
+    }
+
+    .feature-card-body h5 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #443961;
+    }
+
+    .feature-card-body p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <!-- ==================== Navbar Start ==================== -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <!-- ===== Brand Logo ===== -->
+      <a href="index.html">
+        <img src="https://i.ibb.co/R46FZyx1/logo.png" alt="logo" width="200px">
+      </a>
+
+      <!-- ===== Toggle Button for Mobile View ===== -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ===== Navbar Links and Dropdowns ===== -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ps-4 mb-2 mb-lg-0">
+
+          <!-- ===== Home Link ===== -->
+          <li class="nav-item mx-lg-2">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <!-- ===== Digital Services Dropdown ===== -->
+          <li class="nav-item dropdown mx-lg-2">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownMarketing" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Digital Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMarketing">
+              <li><a class="dropdown-item" href="socialMediaMarketing.html">Social Media Marketing</a></li>
+              <li><a class="dropdown-item" href="digiMarkServices.html">Digital Marketing Services</a></li>
+            </ul>
+          </li>
+
+          <!-- ===== Development Dropdown ===== -->
+          <li class="nav-item dropdown mx-lg-2">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownDevelopment" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Development
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownDevelopment">
+              <li><a class="dropdown-item" href="wordPressDevelopment.html">WordPress Development</a></li>
+              <li><a class="dropdown-item" href="EcomWebDevelopment.html">Ecommerce Website Development</a></li>
+            </ul>
+          </li>
+
+          <!-- ===== About Us Link ===== -->
+          <li class="nav-item mx-lg-2">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+
+          <!-- ===== Contact Us Link ===== -->
+          <li class="nav-item mx-lg-2">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ==================== Navbar End ==================== -->
+
+  <!-- ==================== Digi Mark Services Section1 Start ==================== -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <p class="text-uppercase text-muted fw-semibold mb-1 text-center">Care Features</p>
+      <h2 class="fw-bold mb-5">Provide Awesome Service<br>With Our Tools</h2>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="p-4 shadow-sm service-card bg-white h-100 rounded">
+            <img src="https://i.ibb.co/nqH2K0k4/SEO-Consultancy.png" alt="SEO-Consultancy" class="img-fluid mb-3"
+              style="height:80px">
+            <h5 class="fw-bold mb-2">SEO Consultancy</h5>
+            <p class="text-muted mb-0">
+              SEO consulting can help your business improve its online presence by identifying and fixing
+              key SEO concerns.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="p-4 shadow-sm service-card bg-white h-100 rounded">
+            <img src="https://i.ibb.co/CpSPYb87/Competitor-Analysis.webp" alt="Competitor-Analysis"
+              class="img-fluid mb-3" style="height:80px">
+            <h5 class="fw-bold mb-2">Competitor Analysis</h5>
+            <p class="text-muted mb-0">
+              Competitor analysis is an important tool for businesses in any industry. By understanding
+              the strengths and weaknesses of your competition.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="p-4 shadow-sm service-card bg-white h-100 rounded">
+            <img src="https://i.ibb.co/M5GBzQJn/Social-Media-Marketing.png" alt="Social-Media-Marketing"
+              class="img-fluid mb-3" style="height:80px">
+            <h5 class="fw-bold mb-2">Social Media Marketing</h5>
+            <p class="text-muted mb-0">
+              Social media marketing is the process of using online platforms like Facebook, Twitter, and
+              LinkedIn to promote products or services to a large audience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== Digi Mark Services Section1 End ==================== -->
+
+  <!-- ==================== Digi Mark Services Section2 Start ==================== -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+
+        <!-- Left Image -->
+        <div class="col-md-5">
+          <div class="custom-img-container overflow-hidden shadow-lg">
+            <img src="https://i.ibb.co/DHRKVFxV/Digi-Mark-Services1.webp" alt="Digital Marketing Services"
+              class="img-fluid w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-6">
+          <div class="p-4 p-md-5">
+            <h2 class="text-dark fw-bold mb-3">ABOUT US</h2>
+            <h3 class="text-primary fw-semibold mb-3">Boosts Your Website Traffic!</h3>
+            <h4 class="fw-semibold text-secondary mb-3">Digital Marketing Service</h4>
+            <p class="text-muted mb-4">
+              Mumbai continues to be one of the most sought-after cities in the world for business. With
+              its cosmopolitan culture, bustling economy, and sunny weather, it's no wonder businesses are
+              flocking to Mumbai to set up shop. But just because Mumbai is such a popular location for
+              businesses doesn't mean that you have to sacrifice your marketing efforts. In fact, with the
+              exemplary digital marketing service in Mumbai, you can achieve a lot in a short amount of
+              time. So what are the benefits of using a digital marketing service in Mumbai? Read on to
+              find out!
+            </p>
+            <a href="aboutUs.html" class="btn about-btn fw-semibold px-4 py-2">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ==================== Digi Mark Services Section2 End ==================== -->
+
+  <!-- ==================== Digi Mark Services Section3 Start ==================== -->
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="row">
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <div class="section-title mb-4">
+            <h2 class="text-uppercase fw-bold">WHY CHOOSE US</h2>
+            <h3 class="fw-semibold">Outstanding Digital Experience</h3>
+            <p>Digital technology has made it possible for people to have an excellent digital experience</p>
+          </div>
+          <ul class="feature-list ps-3">
+            <li>For startups and growing businesses, an online specialist can develop a digital marketing plan to help
+              you grow.</li>
+            <li>Your digital consultant will also be able to kickstart campaigns and maximise your marketing budget.
+            </li>
+            <li>As we increase our usage of technology, the digital experience becomes increasingly important.</li>
+          </ul>
+          <a href="#" class="btn custom-btn mb-5 md-md-0">DISCOVER MORE</a>
+        </div>
+
+        <!-- Right Cards -->
+        <div class="col-lg-6">
+          <div class="row g-3 align-items-stretch">
+            <div class="col-md-6">
+              <div class="feature-card h-100 text-center">
+                <img src="https://i.ibb.co/wFc9b1Gt/Search-Engine-Optimization.png" alt="Search Engine Optimization">
+                <div class="feature-card-body">
+                  <h5>Search Engine Optimization</h5>
+                  <p>SEO is the process of optimizing a website to rank higher in search engines.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card h-100 text-center">
+                <img src="https://i.ibb.co/j97Sz4GC/Social-Media-Strategy.webp" alt="Social Media Strategy">
+                <div class="feature-card-body">
+                  <h5>Social Media Strategy</h5>
+                  <p>Social media is a powerful tool for marketing and promoting your brand.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card h-100 text-center">
+                <img src="https://i.ibb.co/Q7PqQK89/Real-Time-and-Data.png" alt="Real Time and Data">
+                <div class="feature-card-body">
+                  <h5>Real Time and Data</h5>
+                  <p>Modern systems handle complex data in real time with powerful computing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card h-100 text-center">
+                <img src="https://i.ibb.co/hJtP8G8n/Reporting-Analysis.webp" alt="Reporting & Analysis">
+                <div class="feature-card-body">
+                  <h5>Reporting & Analysis</h5>
+                  <p>These tools are essential for making decisions backed by real-time data.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== Digi Mark Services Section3 End ==================== -->
+
+  <!-- ==================== Footer Start ==================== -->
+  <footer class="container-fluid p-5 py-md-0">
+    <!-- Row containing all footer sections -->
+    <div class="row align-items-center justify-content-center">
+
+      <!-- ===== Logo & Description Section ===== -->
+      <div class="footer-sec order-1 col-8 col-md-3 py-md-5">
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="https://i.ibb.co/R46FZyx1/logo.png" alt="logo" width="200px">
+        </a>
+        <!-- Company Description -->
+        <p>
+          MakeDigi have much planned for the future, working with great clients and continued Website
+          development.
+        </p>
+      </div>
+
+      <!-- ===== Contacts Section ===== -->
+      <div class="footer-sec order-3 order-md-2 col-8 col-md-4 py-md-5">
+        <h4 class="footerHeader fw-bold">Contacts</h4>
+
+        <!-- Phone -->
+        <p><i class="fa-solid fa-phone"></i> <span>+91 1234567890</span></p>
+
+        <!-- Email -->
+        <p><i class="fa-solid fa-envelope"></i> <span>support@makedigi.in</span></p>
+
+        <!-- Address -->
+        <p><i class="fa-solid fa-location-dot"></i>
+          <span>135 Marine Drive Road Churchgate, Mumbai</span>
+        </p>
+      </div>
+
+      <!-- ===== Services Links Section ===== -->
+      <div class="footer-sec order-2 order-md-3 col-4 col-md-2 py-5">
+        <h4 class="footerHeader fw-bold">Services</h4>
+        <a href="">SEO Marketing</a>
+        <a href="">SEO Services</a>
+        <a href="">Pay Per Click</a>
+        <a href="">Social Media</a>
+        <a href="">SEO Audit</a>
+      </div>
+
+      <!-- ===== Menu Links Section ===== -->
+      <div class="footer-sec order-4 col-4 col-md-2 py-md-5">
+        <h4 class="footerHeader fw-bold">Menu</h4>
+        <a href="index.html">Home</a>
+        <a href="">Digital Services</a>
+        <a href="">Web Services</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- ==================== Footer End ==================== -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
