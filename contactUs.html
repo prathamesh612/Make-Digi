@@ -97,7 +97,7 @@
                                 <label for="fname" class="form-label">
                                     First name <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" class="form-control" id="fname" placeholder="Name" />
+                                <input type="text" class="form-control" id="fname" placeholder="Name" minlength="2" required />
                             </div>
 
                             <!-- Last Name Field -->
@@ -105,7 +105,7 @@
                                 <label for="lname" class="form-label">
                                     Last name <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" class="form-control" id="lname" placeholder="Name" />
+                                <input type="text" class="form-control" id="lname" placeholder="Name" minlength="3" required />
                             </div>
 
                             <!-- Email Field -->
@@ -113,7 +113,7 @@
                                 <label for="email" class="form-label">
                                     Email <span class="text-danger">*</span>
                                 </label>
-                                <input type="email" class="form-control" id="email" placeholder="Email" />
+                                <input type="email" class="form-control" id="email" placeholder="Email" minlength="5" required />
                             </div>
 
                             <!-- Phone Field -->
@@ -121,7 +121,7 @@
                                 <label for="phone" class="form-label">
                                     Phone <span class="text-danger">*</span>
                                 </label>
-                                <input type="tel" class="form-control" id="phone" placeholder="Phone" />
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone" pattern="[0-9]{10}" maxlength="10" minlength="10" required />
                             </div>
 
                             <!-- Message Field -->
@@ -246,5 +246,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
